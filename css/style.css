@@ -53,10 +53,13 @@ aside {
 
 
 ul {
-  border: 1px solid white;
   margin: 50px 0;
   padding: 0 8px;
   list-style: none;
+}
+
+ul li {
+  margin: 15px 0;
 }
 
 ul li a {
