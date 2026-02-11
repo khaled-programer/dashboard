@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #d4d4d4;
+  background-color: #cfe0f1;
 }
 
 /* main rules and rest end */
@@ -86,10 +86,6 @@ nav {
   grid-template-rows: 1fr 1fr;
 }
 
-nav>* {
-  /* border: 1px solid black */
-}
-
 .search {
   display: flex;
   justify-content: space-between;
@@ -113,7 +109,7 @@ nav>* {
 .search form input {
   border: none;
   border-radius: 10px;
-  background-color: #d4d4d4;
+  background-color: #cfe0f1;
   width: 80%;
   padding: 4px;
   margin: 0 4px;
@@ -190,4 +186,120 @@ nav>* {
   font-weight: normal;
   font-size: .8em;
   text-transform: capitalize;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+  padding: 18px;
+}
+
+.content-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.box {
+  background-color: white;
+  border-left: 8px solid #e7ce42;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px black;
+  padding: 18px;
+}
+
+.box p {
+  color: #868484;
+}
+
+.box ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box ul li a {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.box h4 {
+  text-transform: capitalize;
+}
+
+.box p {
+  font-size: .9em;
+}
+
+.right-side {
+  padding: 18px;
+}
+
+
+.info {
+  background-color: white;
+  padding: 18px 22px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px black;
+}
+
+.info div {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid gray;
+}
+
+.info div:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.info div h4 {
+  text-transform: capitalize;
+}
+
+.info div p {
+  font-size: .7em;
+  color: #868484;
+  padding: 4px 0;
+}
+
+.trending {
+  background-color: white;
+  box-shadow: 1px 1px 2px black;
+  border: none;
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.trending div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.trending div img {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+
+}
+
+.trending div p {
+  font-size: .8em;
+  color: #868484;
+}
+
+.trending p span {
+  color: black;
 }
